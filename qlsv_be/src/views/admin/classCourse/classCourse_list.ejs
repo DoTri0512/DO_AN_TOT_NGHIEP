@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <input type="checkbox" id="nav-toggle" />
+      <nav class="sidebar">
+        <div class="sidebar-logo">
+          <a href="/admin/dashboard" class="logo-link"
+            ><i class="fa-solid fa-user-graduate"></i>
+            <span style="margin-left: 5px">QLSV</span></a
+          >
+        </div>
+        <ul class="sidebar-content">
+          <li>
+            <a href="/admin/dashboard"
+              ><i class="fa-solid fa-house"></i>
+              <span style="margin-left: 5px">Trang chủ</span></a
+            >
+          </li>
+          <li class="dropdown_menu">
+            <div class="sub_box">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Thông tin trường</span>
+              <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </div>
+            <ul class="sub_menu">
+              <li>
+                <a href="/admin/course_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý phòng học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/department_list"
+                  ><i class="fa-solid fa-building-columns"></i>
+                  <span style="margin-left: 7px">Quản lý khoa học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/major_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý ngành học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/class_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý lớp học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/subject_list">
+                  <i class="fa-solid fa-book"></i
+                  ><span style="margin-left: 7px">Quản lý môn học</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/admin/account_detail"
+              ><i class="fa-solid fa-user"></i>
+              <span style="margin-left: 5px">Quản lý tài khoản</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/classCourse_list">
+              <i class="fa-solid fa-book"></i
+              ><span style="margin-left: 7px">Quản lý lớp học phần</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/enrollment_list">
+              <i class="fa-solid fa-book"></i
+              ><span style="margin-left: 7px">Quản lý đăng ký học</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/schedule_list">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span style="margin-left: 7px">Thời khóa biểu</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/exam_list">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span style="margin-left: 7px">Quản lý lịch thi</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/lecturer_list"
+              ><i class="fa-solid fa-user"></i>
+              <span style="margin-left: 5px">Quản lý giảng viên</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/student_list"
+              ><i class="fa-solid fa-user-graduate"></i
+              ><span style="margin-left: 7px">Quản lý sinh viên</span></a
+            >
+          </li>
+          <li class="dropdown_menu">
+            <div class="sub_box">
+              <i class="fa-solid fa-book"></i>
+              <span>Quản lý điểm</span>
+              <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </div>
+            <ul class="sub_menu">
+              <li>
+                <a href="/admin/grade_list"
+                  ><i class="bi bi-book"></i
+                  ><span>Quản lý điểm học tập</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/conduct_list"
+                  ><i class="bi bi-book"></i
+                  ><span>Quản lý điểm rèn luyện</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i
+              ><span style="margin-left: 7px">Đăng xuất</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main-header">
+          <div class="left">
+            <label for="nav-toggle"><i class="fa-solid fa-bars"></i></label>
+          </div>
+          <div class="right">
+            <div class="img-icon">
+              <img
+                src="https://tse4.explicit.bing.net/th?id=OIP.xo-BCC1ZKFpLL65D93eHcgHaGe&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <span><%= user_name.username %></span>
+          </div>
+        </div>
+        <div class="main-content">
+          <% if (messages.success) { %>
+          <div class="success alert alert-success"><%= messages.success %></div>
+          <% } %>
+          <div class="box">
+            <h4 class="head-list">Danh sách lớp học phần</h4>
+            <div class="main-box">
+              <div class="box-head">
+                <a href="/admin/classCourse_add" class="btn-add">Thêm mới</a>
+                <form action="" class="form">
+                  <input
+                    type="text"
+                    placeholder="Nhập thông tin tìm kiếm"
+                    class="form-control"
+                    id="searchInput"
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="padding: 10px 16px"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="box-content">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">STT</th>
+                      <!-- <th scope="col">Mã lớp học phần</th> -->
+                      <th scope="col">Tên lớp học phần</th>
+                      <th scope="col">Mã môn học</th>
+                      <th scope="col">Tên môn học</th>
+                      <th scope="col">Tên giảng viên dạy</th>
+                      <th scope="col">Số tín chỉ</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% if(list.length == 0) {%>
+                    <tr>
+                      <td style="text-align: center" colspan="12">
+                        Không có dữ liệu
+                      </td>
+                    </tr>
+                    <% } %> <% for (let [index, item] of list.entries()){ %>
+                    <tr>
+                      <td><%= index + 1 %></td>
+                      <td><%= item?.classCourse_name %></td>
+                      <td><%= item?.subject.id %></td>
+                      <td><%= item?.subject.subject_name %></td>
+                      <td><%= item?.lecturer?.fullName %></td>
+                      <td><%= item?.subject?.credits %></td>
+                      <td style="text-align: center">
+                        <a href="/getClassCourse/<%= item.id %>">
+                          <i class="fa-solid fa-pen-to-square"></i
+                        ></a>
+                        <a href="/getScheduleClass/<%= item.id %>">
+                          <i class="fa-solid fa-eye"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <%} %>
+                  </tbody>
+                </table>
+                <nav aria-label="Page navigation example ">
+                  <ul class="pagination">
+                    <% if (currentPage > 1) { %>
+                    <li class="page-item">
+                      <a
+                        href="/admin/classCourse_list?page=<%= currentPage - 1 %>"
+                        class="page-link page-arrow"
+                        ><i class="fa-solid fa-chevron-left"></i
+                      ></a>
+                    </li>
+                    <% } else { %>
+                    <li class="page-item disabled">
+                      <a class="page-link page-arrow" href="#">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      </a>
+                    </li>
+                    <% } %> <% for (let i = 1; i <= totalPages; i++) { %>
+                    <li
+                      class="page-item <%= (i === currentPage) ? 'active' : '' %>"
+                    >
+                      <a
+                        class="page-link"
+                        href="/admin/classCourse_list?page=<%= i %>"
+                        ><%= i %></a
+                      >
+                    </li>
+                    <% } %> <% if (currentPage < totalPages) { %>
+                    <li class="page-item">
+                      <a
+                        href="/admin/classCourse_list?page=<%= currentPage + 1 %>"
+                        class="page-link page-arrow"
+                        ><i class="fa-solid fa-chevron-right"></i
+                      ></a>
+                    </li>
+                    <% } else { %>
+                    <li class="page-item disabled">
+                      <a
+                        class="page-link page-arrow"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </a>
+                    </li>
+                    <% } %>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    window.onload = function () {
+      var alerts = document.querySelectorAll(".alert");
+      alerts.forEach(function (alert) {
+        setTimeout(function () {
+          alert.style.display = "none";
+        }, 3000);
+      });
+    };
+    const table = document.querySelector("table");
+    const rows = table.getElementsByTagName("tr");
+    const noResultsRow = document.createElement("tr");
+    const noResultsCell = document.createElement("td");
+    noResultsCell.textContent = "Không tìm thấy kết quả";
+    noResultsCell.colSpan = table.rows[0].cells.length;
+    noResultsRow.appendChild(noResultsCell);
+    // Lấy tham chiếu đến input tìm kiếm
+    const searchInput = document.getElementById("searchInput");
+
+    // Lắng nghe sự kiện input trên input tìm kiếm
+    searchInput.addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase();
+      let hasResults = false;
+
+      // Ẩn hàng "Không tìm thấy kết quả"
+      noResultsRow.style.display = "none";
+
+      // Duyệt qua từng hàng trong bảng
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        const studentId = row.cells[1].textContent.toLowerCase();
+
+        // Hiển thị hàng nếu mã sinh viên khớp với giá trị tìm kiếm
+        if (studentId.includes(searchTerm)) {
+          row.style.display = "";
+          hasResults = true;
+        } else {
+          row.style.display = "none";
+        }
+      }
+      if (!hasResults) {
+        noResultsRow.style.display = "";
+        table.appendChild(noResultsCell);
+      } else {
+        noResultsRow.style.display = "none";
+      }
+    });
+  </script>
+</html>

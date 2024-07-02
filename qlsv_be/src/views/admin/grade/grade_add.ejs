@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <input type="checkbox" id="nav-toggle" />
+      <nav class="sidebar">
+        <div class="sidebar-logo">
+          <a href="/admin/dashboard" class="logo-link"
+            ><i class="fa-solid fa-user-graduate"></i>
+            <span style="margin-left: 5px">QLSV</span></a
+          >
+        </div>
+        <ul class="sidebar-content">
+          <li>
+            <a href="/admin/dashboard"
+              ><i class="fa-solid fa-house"></i>
+              <span style="margin-left: 5px">Trang chủ</span></a
+            >
+          </li>
+          <li class="dropdown_menu">
+            <div class="sub_box">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Thông tin trường</span>
+              <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </div>
+            <ul class="sub_menu">
+              <li>
+                <a href="/admin/course_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý phòng học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/department_list"
+                  ><i class="fa-solid fa-building-columns"></i>
+                  <span style="margin-left: 7px">Quản lý khoa học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/major_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý ngành học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/class_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý lớp học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/subject_list">
+                  <i class="fa-solid fa-book"></i
+                  ><span style="margin-left: 7px">Quản lý môn học</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/admin/account_detail"
+              ><i class="fa-solid fa-user"></i>
+              <span style="margin-left: 5px">Quản lý tài khoản</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/classCourse_list">
+              <i class="fa-solid fa-book"></i
+              ><span style="margin-left: 7px">Quản lý lớp học phần</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/enrollment_list">
+              <i class="fa-solid fa-book"></i
+              ><span style="margin-left: 7px">Quản lý đăng ký học</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/schedule_list">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span style="margin-left: 7px">Thời khóa biểu</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/exam_list">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span style="margin-left: 7px">Quản lý lịch thi</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/lecturer_list"
+              ><i class="fa-solid fa-user"></i>
+              <span style="margin-left: 5px">Quản lý giảng viên</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/student_list"
+              ><i class="fa-solid fa-user-graduate"></i
+              ><span style="margin-left: 7px">Quản lý sinh viên</span></a
+            >
+          </li>
+          <li class="dropdown_menu">
+            <div class="sub_box">
+              <i class="fa-solid fa-book"></i>
+              <span>Quản lý điểm</span>
+              <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </div>
+            <ul class="sub_menu">
+              <li>
+                <a href="/admin/grade_list"
+                  ><i class="bi bi-book"></i
+                  ><span>Quản lý điểm học tập</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/conduct_list"
+                  ><i class="bi bi-book"></i
+                  ><span>Quản lý điểm rèn luyện</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i
+              ><span style="margin-left: 7px">Đăng xuất</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main-header">
+          <div class="left">
+            <label for="nav-toggle"><i class="fa-solid fa-bars"></i></label>
+          </div>
+          <div class="right">
+            <div class="img-icon">
+              <img
+                src="https://tse4.explicit.bing.net/th?id=OIP.xo-BCC1ZKFpLL65D93eHcgHaGe&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <span><%= user.username %></span>
+          </div>
+        </div>
+        <div class="main-content">
+          <% if (messages.error) { %>
+          <div class="success alert alert-danger"><%= messages.error %></div>
+          <% } %>
+          <div class="box">
+            <h4 class="head-list">Form thêm điểm môn học cho sinh viên</h4>
+            <div class="main-box">
+              <form action="/grade_exam/add" method="post">
+                <div class="form-group">
+                  <label for="">Mã sinh viên</label>
+                  <input
+                    type="text"
+                    name="student_id"
+                    id="student_id"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Môn học</label>
+                  <select
+                    id="disabledSelect"
+                    class="form-select"
+                    name="subject_id"
+                  >
+                    <% for(let item of list_subject){ %>
+                    <option value="<%= item.id %>">
+                      <%= item.subject_name %>
+                    </option>
+                    <%} %>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Nhập điểm thi</label>
+                  <input
+                    type="text"
+                    name="exam_score"
+                    id="exam_score"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-btn">
+                  <a href="/admin/grade_list" class="btn btn-danger">Thoát</a>
+                  <button type="submit" class="btn btn-primary">Lưu</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Add more content as needed -->
+      </main>
+    </div>
+  </body>
+  <script>
+    window.onload = function () {
+      var alerts = document.querySelectorAll(".alert");
+      alerts.forEach(function (alert) {
+        setTimeout(function () {
+          alert.style.display = "none";
+        }, 3000);
+      });
+    };
+  </script>
+</html>

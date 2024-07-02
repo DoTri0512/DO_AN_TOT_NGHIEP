@@ -1,0 +1,50 @@
+.student-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.student-item {
+  width: calc(25% - 20px);
+  padding: 20px 16px;
+  /* gap: 15px; */
+  border-radius: 6px;
+  background-color: #6495ed;
+  box-shadow: 5px 0px 15px #ccc;
+  color: #fff;
+  font-size: 20px;
+}
+
+.student-icon {
+  text-align: center;
+  font-size: 36px;
+}
+
+p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.schedule-item {
+  border-bottom: 1px solid #fff !important;
+}
+
+@media (max-width: 1024px) {
+  .student-item {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 960px) {
+  .student-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .student-item {
+    width: 100%;
+  }
+}

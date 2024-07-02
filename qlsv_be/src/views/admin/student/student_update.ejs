@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <input type="checkbox" id="nav-toggle" />
+      <nav class="sidebar">
+        <div class="sidebar-logo">
+          <a href="/admin/dashboard" class="logo-link"
+            ><i class="fa-solid fa-user-graduate"></i>
+            <span style="margin-left: 5px">QLSV</span></a
+          >
+        </div>
+        <ul class="sidebar-content">
+          <li>
+            <a href="/admin/dashboard"
+              ><i class="fa-solid fa-house"></i>
+              <span style="margin-left: 5px">Trang chủ</span></a
+            >
+          </li>
+          <li class="dropdown_menu">
+            <div class="sub_box">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Thông tin trường</span>
+              <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </div>
+            <ul class="sub_menu">
+              <li>
+                <a href="/admin/course_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý phòng học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/department_list"
+                  ><i class="fa-solid fa-building-columns"></i>
+                  <span style="margin-left: 7px">Quản lý khoa học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/major_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý ngành học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/class_list"
+                  ><i class="fa-solid fa-building-columns"></i
+                  ><span style="margin-left: 7px">Quản lý lớp học</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/subject_list">
+                  <i class="fa-solid fa-book"></i
+                  ><span style="margin-left: 7px">Quản lý môn học</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/admin/account_detail"
+              ><i class="fa-solid fa-user"></i>
+              <span style="margin-left: 5px">Quản lý tài khoản</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/classCourse_list">
+              <i class="fa-solid fa-book"></i
+              ><span style="margin-left: 7px">Quản lý lớp học phần</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/enrollment_list">
+              <i class="fa-solid fa-book"></i
+              ><span style="margin-left: 7px">Quản lý đăng ký học</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/schedule_list">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span style="margin-left: 7px">Thời khóa biểu</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/exam_list">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span style="margin-left: 7px">Quản lý lịch thi</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/lecturer_list"
+              ><i class="fa-solid fa-user"></i>
+              <span style="margin-left: 5px">Quản lý giảng viên</span></a
+            >
+          </li>
+          <li>
+            <a href="/admin/student_list"
+              ><i class="fa-solid fa-user-graduate"></i
+              ><span style="margin-left: 7px">Quản lý sinh viên</span></a
+            >
+          </li>
+          <li class="dropdown_menu">
+            <div class="sub_box">
+              <i class="fa-solid fa-book"></i>
+              <span>Quản lý điểm</span>
+              <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </div>
+            <ul class="sub_menu">
+              <li>
+                <a href="/admin/grade_list"
+                  ><i class="bi bi-book"></i
+                  ><span>Quản lý điểm học tập</span></a
+                >
+              </li>
+              <li>
+                <a href="/admin/conduct_list"
+                  ><i class="bi bi-book"></i
+                  ><span>Quản lý điểm rèn luyện</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i
+              ><span style="margin-left: 7px">Đăng xuất</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main-header">
+          <div class="left">
+            <label for="nav-toggle"><i class="fa-solid fa-bars"></i></label>
+          </div>
+          <div class="right">
+            <div class="img-icon">
+              <img
+                src="https://tse4.explicit.bing.net/th?id=OIP.xo-BCC1ZKFpLL65D93eHcgHaGe&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <span><%= user_name.username %></span>
+          </div>
+        </div>
+        <div class="main-content">
+          <% if (messages.error) { %>
+          <div class="success alert alert-danger"><%= messages.error %></div>
+          <% } %>
+          <div class="box">
+            <h4 class="head-list">Form cập nhật sinh viên</h4>
+            <div class="main-box">
+              <form
+                action="/student/update/<%= item?.id %>"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="form-parent">
+                  <div class="form-child">
+                    <div class="form-group">
+                      <label for="">Mã sinh viên</label>
+                      <input
+                        type="text"
+                        name="id"
+                        id="id"
+                        class="form-control"
+                        value="<%= item?.id %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Họ sinh viên</label>
+                      <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        class="form-control"
+                        value="<%= item?.firstName %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Tên sinh viên</label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                        class="form-control"
+                        value="<%= item?.lastName %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Họ tên sinh viên</label>
+                      <input
+                        type="text"
+                        name="fullName"
+                        id="fullName"
+                        class="form-control"
+                        value="<%= item?.fullName %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Số điện thoại</label>
+                      <input
+                        type="text"
+                        name="phoneNumber"
+                        id="phoneNumber"
+                        class="form-control"
+                        value="<%= item?.phoneNumber %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        value="<%= item?.email %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Căn cước công dân</label>
+                      <input
+                        type="text"
+                        name="citizenID"
+                        id="citizenID"
+                        class="form-control"
+                        value="<%= item?.citizenID %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Ngày sinh</label>
+                      <input
+                        type="date"
+                        name="birthDate"
+                        id="birthDate"
+                        class="form-control"
+                        value="<%= moment(item?.birthDate).format('YYYY-MM-DD') %>"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-child">
+                    <div class="form-group">
+                      <label for="">Địa chỉ</label>
+                      <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        class="form-control"
+                        value="<%= item?.address %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Quê quán</label>
+                      <input
+                        type="text"
+                        name="country"
+                        id="country"
+                        class="form-control"
+                        value="<%= item?.country %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Giới tính</label>
+                      <input
+                        type="text"
+                        name="gender"
+                        id="gender"
+                        class="form-control"
+                        value="<%= item?.gender %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Dân tộc</label>
+                      <input
+                        type="text"
+                        name="nation"
+                        id="nation"
+                        class="form-control"
+                        value="<%= item?.nation %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Họ tên bố</label>
+                      <input
+                        type="text"
+                        name="fullNameFather"
+                        id="fullNameFather"
+                        class="form-control"
+                        value="<%= item?.fullNameFather %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Số điện thoại bố</label>
+                      <input
+                        type="text"
+                        name="phoneNumberFather"
+                        id="phoneNumberFather"
+                        class="form-control"
+                        value="<%= item?.phoneNumberFather %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Họ tên mẹ</label>
+                      <input
+                        type="text"
+                        name="fullNameMother"
+                        id="fullNameMother"
+                        class="form-control"
+                        value="<%= item?.fullNameMother %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Số điện thoại mẹ</label>
+                      <input
+                        type="text"
+                        name="phoneNumberMother"
+                        id="phoneNumberMother"
+                        class="form-control"
+                        value="<%= item?.phoneNumberMother %>"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-child">
+                    <div class="form-group">
+                      <label for="">Khoa học</label>
+                      <select
+                        id="disabledSelect"
+                        class="form-select"
+                        name="department_id"
+                      >
+                        <% for(let department of list_department){ %>
+                        <option value="<%= department?.id %>" <%= item.department.id === department.id ? 'selected' : '' %>>
+                          <%= department.department_name %>
+                        </option>
+                        <%} %>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Ngành học</label>
+                      <select
+                        id="disabledSelect"
+                        class="form-select"
+                        name="major_id"
+                      >
+                        <% for(let major of list_major){ %>
+                        <option value="<%= major?.id %>" <%= item.major.id === major.id ? 'selected' : '' %>>
+                          <%= major.major_name %>
+                        </option>
+                        <%} %>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Lớp học</label>
+                      <select
+                        id="disabledSelect"
+                        class="form-select"
+                        name="class_id"
+                      >
+                        <% for(let classes of list_class){ %>
+                        <option value="<%= classes?.id %>" <%= item?.classes?.id === classes?.id ? 'selected' : '' %>>
+                          <%= classes.class_name %>
+                        </option>
+                        <%} %>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Năm nhập học</label>
+                      <input
+                        type="date"
+                        name="year_of_admission"
+                        id="year_of_admission"
+                        class="form-control"
+                        value="<%= moment(item?.year_of_admission).format('YYYY-MM-DD') %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Năm bắt đầu học</label>
+                      <input
+                        type="date"
+                        name="year_of_starting_admission"
+                        id="year_of_starting_admission"
+                        class="form-control"
+                        value="<%=  moment(item?.year_of_starting_admission).format('YYYY-MM-DD')  %>"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Upload ảnh sinh viên</label>
+                      <input
+                        type="file"
+                        name="img_student"
+                        id="img_student"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-btn">
+                  <a href="/admin/student_list" class="btn btn-danger">Thoát</a>
+                  <button type="submit" class="btn btn-primary">Lưu</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    window.onload = function () {
+      var alerts = document.querySelectorAll(".alert");
+      alerts.forEach(function (alert) {
+        setTimeout(function () {
+          alert.style.display = "none";
+        }, 3000);
+      });
+    };
+  </script>
+</html>
